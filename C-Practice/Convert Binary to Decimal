@@ -5,6 +5,7 @@ int main() {
 // Convert binary to decimal
 // Binary 11010 to Decimal
 // 2^0 * 0 + 2^1 * 1 + 2^2 * 0 + 2^3 * 1 + 2^4 * 1
+
 int N, decimal_dig = 0, result = 0, power = 0;
 printf("Please enter a Binary number:");
 scanf("%d", &N);
@@ -17,8 +18,6 @@ while(N>0) {
     power++;
     N = N / 10;
     result += decimal_dig; 
-    //printf("%d\n", last_dig);
-    //printf("%d\n", N );
 }
 printf("%d", result);
 return 0;
