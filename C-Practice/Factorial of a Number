@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+// Factorial of a Number
+// 5! = 5*4*3*2*
+
+int N = 0;
+long long result = 1;
+
+printf("Please enter an integer: ");
+scanf("%d", &N);
+printf("The integer you entered is: %d\n", N);
+
+for(int i = 1; i <= N; i++) {
+    result = result * i;
+    //printf("%d\n", result);
+}
+
+printf("Factorial is: %lld", result);
+
+return 0;
+}
